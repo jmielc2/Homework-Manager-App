@@ -1,0 +1,3 @@
+/mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/build/CMakeFiles/rebuild_cache.dir
+/mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/build/CMakeFiles/edit_cache.dir
+/mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/build/CMakeFiles/Homework-App.dir
