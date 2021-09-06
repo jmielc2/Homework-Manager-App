@@ -5,10 +5,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/App.cpp" "/mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/build/CMakeFiles/Homework-App.dir/App.cpp.o"
-  "/mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Assignment/Assignment.cpp" "/mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/build/CMakeFiles/Homework-App.dir/Assignment/Assignment.cpp.o"
-  "/mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Class/Class.cpp" "/mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/build/CMakeFiles/Homework-App.dir/Class/Class.cpp.o"
+  "/mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Assignments/Assignment.cpp" "/mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/build/CMakeFiles/Homework-App.dir/Assignments/Assignment.cpp.o"
+  "/mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Classes/Class.cpp" "/mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/build/CMakeFiles/Homework-App.dir/Classes/Class.cpp.o"
   "/mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/States/MainMenu.cpp" "/mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/build/CMakeFiles/Homework-App.dir/States/MainMenu.cpp.o"
   "/mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/States/State.cpp" "/mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/build/CMakeFiles/Homework-App.dir/States/State.cpp.o"
+  "/mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Trackers/AssignmentTracker.cpp" "/mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/build/CMakeFiles/Homework-App.dir/Trackers/AssignmentTracker.cpp.o"
+  "/mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Trackers/ClassTracker.cpp" "/mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/build/CMakeFiles/Homework-App.dir/Trackers/ClassTracker.cpp.o"
+  "/mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Trackers/Tracker.cpp" "/mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/build/CMakeFiles/Homework-App.dir/Trackers/Tracker.cpp.o"
   "/mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/main.cpp" "/mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/build/CMakeFiles/Homework-App.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

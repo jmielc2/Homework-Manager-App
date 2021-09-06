@@ -6,7 +6,6 @@
 
 class App {
 private:
-    int variable;
 public:
     App ();
     ~App();

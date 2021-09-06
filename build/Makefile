@@ -150,59 +150,59 @@ App.cpp.s:
 	$(MAKE) -f CMakeFiles/Homework-App.dir/build.make CMakeFiles/Homework-App.dir/App.cpp.s
 .PHONY : App.cpp.s
 
-Assignment/Assignment.o: Assignment/Assignment.cpp.o
+Assignments/Assignment.o: Assignments/Assignment.cpp.o
 
-.PHONY : Assignment/Assignment.o
-
-# target to build an object file
-Assignment/Assignment.cpp.o:
-	$(MAKE) -f CMakeFiles/Homework-App.dir/build.make CMakeFiles/Homework-App.dir/Assignment/Assignment.cpp.o
-.PHONY : Assignment/Assignment.cpp.o
-
-Assignment/Assignment.i: Assignment/Assignment.cpp.i
-
-.PHONY : Assignment/Assignment.i
-
-# target to preprocess a source file
-Assignment/Assignment.cpp.i:
-	$(MAKE) -f CMakeFiles/Homework-App.dir/build.make CMakeFiles/Homework-App.dir/Assignment/Assignment.cpp.i
-.PHONY : Assignment/Assignment.cpp.i
-
-Assignment/Assignment.s: Assignment/Assignment.cpp.s
-
-.PHONY : Assignment/Assignment.s
-
-# target to generate assembly for a file
-Assignment/Assignment.cpp.s:
-	$(MAKE) -f CMakeFiles/Homework-App.dir/build.make CMakeFiles/Homework-App.dir/Assignment/Assignment.cpp.s
-.PHONY : Assignment/Assignment.cpp.s
-
-Class/Class.o: Class/Class.cpp.o
-
-.PHONY : Class/Class.o
+.PHONY : Assignments/Assignment.o
 
 # target to build an object file
-Class/Class.cpp.o:
-	$(MAKE) -f CMakeFiles/Homework-App.dir/build.make CMakeFiles/Homework-App.dir/Class/Class.cpp.o
-.PHONY : Class/Class.cpp.o
+Assignments/Assignment.cpp.o:
+	$(MAKE) -f CMakeFiles/Homework-App.dir/build.make CMakeFiles/Homework-App.dir/Assignments/Assignment.cpp.o
+.PHONY : Assignments/Assignment.cpp.o
 
-Class/Class.i: Class/Class.cpp.i
+Assignments/Assignment.i: Assignments/Assignment.cpp.i
 
-.PHONY : Class/Class.i
+.PHONY : Assignments/Assignment.i
 
 # target to preprocess a source file
-Class/Class.cpp.i:
-	$(MAKE) -f CMakeFiles/Homework-App.dir/build.make CMakeFiles/Homework-App.dir/Class/Class.cpp.i
-.PHONY : Class/Class.cpp.i
+Assignments/Assignment.cpp.i:
+	$(MAKE) -f CMakeFiles/Homework-App.dir/build.make CMakeFiles/Homework-App.dir/Assignments/Assignment.cpp.i
+.PHONY : Assignments/Assignment.cpp.i
 
-Class/Class.s: Class/Class.cpp.s
+Assignments/Assignment.s: Assignments/Assignment.cpp.s
 
-.PHONY : Class/Class.s
+.PHONY : Assignments/Assignment.s
 
 # target to generate assembly for a file
-Class/Class.cpp.s:
-	$(MAKE) -f CMakeFiles/Homework-App.dir/build.make CMakeFiles/Homework-App.dir/Class/Class.cpp.s
-.PHONY : Class/Class.cpp.s
+Assignments/Assignment.cpp.s:
+	$(MAKE) -f CMakeFiles/Homework-App.dir/build.make CMakeFiles/Homework-App.dir/Assignments/Assignment.cpp.s
+.PHONY : Assignments/Assignment.cpp.s
+
+Classes/Class.o: Classes/Class.cpp.o
+
+.PHONY : Classes/Class.o
+
+# target to build an object file
+Classes/Class.cpp.o:
+	$(MAKE) -f CMakeFiles/Homework-App.dir/build.make CMakeFiles/Homework-App.dir/Classes/Class.cpp.o
+.PHONY : Classes/Class.cpp.o
+
+Classes/Class.i: Classes/Class.cpp.i
+
+.PHONY : Classes/Class.i
+
+# target to preprocess a source file
+Classes/Class.cpp.i:
+	$(MAKE) -f CMakeFiles/Homework-App.dir/build.make CMakeFiles/Homework-App.dir/Classes/Class.cpp.i
+.PHONY : Classes/Class.cpp.i
+
+Classes/Class.s: Classes/Class.cpp.s
+
+.PHONY : Classes/Class.s
+
+# target to generate assembly for a file
+Classes/Class.cpp.s:
+	$(MAKE) -f CMakeFiles/Homework-App.dir/build.make CMakeFiles/Homework-App.dir/Classes/Class.cpp.s
+.PHONY : Classes/Class.cpp.s
 
 States/MainMenu.o: States/MainMenu.cpp.o
 
@@ -258,6 +258,87 @@ States/State.cpp.s:
 	$(MAKE) -f CMakeFiles/Homework-App.dir/build.make CMakeFiles/Homework-App.dir/States/State.cpp.s
 .PHONY : States/State.cpp.s
 
+Trackers/AssignmentTracker.o: Trackers/AssignmentTracker.cpp.o
+
+.PHONY : Trackers/AssignmentTracker.o
+
+# target to build an object file
+Trackers/AssignmentTracker.cpp.o:
+	$(MAKE) -f CMakeFiles/Homework-App.dir/build.make CMakeFiles/Homework-App.dir/Trackers/AssignmentTracker.cpp.o
+.PHONY : Trackers/AssignmentTracker.cpp.o
+
+Trackers/AssignmentTracker.i: Trackers/AssignmentTracker.cpp.i
+
+.PHONY : Trackers/AssignmentTracker.i
+
+# target to preprocess a source file
+Trackers/AssignmentTracker.cpp.i:
+	$(MAKE) -f CMakeFiles/Homework-App.dir/build.make CMakeFiles/Homework-App.dir/Trackers/AssignmentTracker.cpp.i
+.PHONY : Trackers/AssignmentTracker.cpp.i
+
+Trackers/AssignmentTracker.s: Trackers/AssignmentTracker.cpp.s
+
+.PHONY : Trackers/AssignmentTracker.s
+
+# target to generate assembly for a file
+Trackers/AssignmentTracker.cpp.s:
+	$(MAKE) -f CMakeFiles/Homework-App.dir/build.make CMakeFiles/Homework-App.dir/Trackers/AssignmentTracker.cpp.s
+.PHONY : Trackers/AssignmentTracker.cpp.s
+
+Trackers/ClassTracker.o: Trackers/ClassTracker.cpp.o
+
+.PHONY : Trackers/ClassTracker.o
+
+# target to build an object file
+Trackers/ClassTracker.cpp.o:
+	$(MAKE) -f CMakeFiles/Homework-App.dir/build.make CMakeFiles/Homework-App.dir/Trackers/ClassTracker.cpp.o
+.PHONY : Trackers/ClassTracker.cpp.o
+
+Trackers/ClassTracker.i: Trackers/ClassTracker.cpp.i
+
+.PHONY : Trackers/ClassTracker.i
+
+# target to preprocess a source file
+Trackers/ClassTracker.cpp.i:
+	$(MAKE) -f CMakeFiles/Homework-App.dir/build.make CMakeFiles/Homework-App.dir/Trackers/ClassTracker.cpp.i
+.PHONY : Trackers/ClassTracker.cpp.i
+
+Trackers/ClassTracker.s: Trackers/ClassTracker.cpp.s
+
+.PHONY : Trackers/ClassTracker.s
+
+# target to generate assembly for a file
+Trackers/ClassTracker.cpp.s:
+	$(MAKE) -f CMakeFiles/Homework-App.dir/build.make CMakeFiles/Homework-App.dir/Trackers/ClassTracker.cpp.s
+.PHONY : Trackers/ClassTracker.cpp.s
+
+Trackers/Tracker.o: Trackers/Tracker.cpp.o
+
+.PHONY : Trackers/Tracker.o
+
+# target to build an object file
+Trackers/Tracker.cpp.o:
+	$(MAKE) -f CMakeFiles/Homework-App.dir/build.make CMakeFiles/Homework-App.dir/Trackers/Tracker.cpp.o
+.PHONY : Trackers/Tracker.cpp.o
+
+Trackers/Tracker.i: Trackers/Tracker.cpp.i
+
+.PHONY : Trackers/Tracker.i
+
+# target to preprocess a source file
+Trackers/Tracker.cpp.i:
+	$(MAKE) -f CMakeFiles/Homework-App.dir/build.make CMakeFiles/Homework-App.dir/Trackers/Tracker.cpp.i
+.PHONY : Trackers/Tracker.cpp.i
+
+Trackers/Tracker.s: Trackers/Tracker.cpp.s
+
+.PHONY : Trackers/Tracker.s
+
+# target to generate assembly for a file
+Trackers/Tracker.cpp.s:
+	$(MAKE) -f CMakeFiles/Homework-App.dir/build.make CMakeFiles/Homework-App.dir/Trackers/Tracker.cpp.s
+.PHONY : Trackers/Tracker.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -297,18 +378,27 @@ help:
 	@echo "... App.o"
 	@echo "... App.i"
 	@echo "... App.s"
-	@echo "... Assignment/Assignment.o"
-	@echo "... Assignment/Assignment.i"
-	@echo "... Assignment/Assignment.s"
-	@echo "... Class/Class.o"
-	@echo "... Class/Class.i"
-	@echo "... Class/Class.s"
+	@echo "... Assignments/Assignment.o"
+	@echo "... Assignments/Assignment.i"
+	@echo "... Assignments/Assignment.s"
+	@echo "... Classes/Class.o"
+	@echo "... Classes/Class.i"
+	@echo "... Classes/Class.s"
 	@echo "... States/MainMenu.o"
 	@echo "... States/MainMenu.i"
 	@echo "... States/MainMenu.s"
 	@echo "... States/State.o"
 	@echo "... States/State.i"
 	@echo "... States/State.s"
+	@echo "... Trackers/AssignmentTracker.o"
+	@echo "... Trackers/AssignmentTracker.i"
+	@echo "... Trackers/AssignmentTracker.s"
+	@echo "... Trackers/ClassTracker.o"
+	@echo "... Trackers/ClassTracker.i"
+	@echo "... Trackers/ClassTracker.s"
+	@echo "... Trackers/Tracker.o"
+	@echo "... Trackers/Tracker.i"
+	@echo "... Trackers/Tracker.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

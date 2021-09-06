@@ -7,13 +7,13 @@ CMakeFiles/Homework-App.dir/App.cpp.o: /mnt/c/users/jacob/onedrive/documents/git
 CMakeFiles/Homework-App.dir/App.cpp.o: /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/States/State.hpp
 CMakeFiles/Homework-App.dir/App.cpp.o: /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/core.hpp
 
-CMakeFiles/Homework-App.dir/Assignment/Assignment.cpp.o: /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Assignment/Assignment.cpp
-CMakeFiles/Homework-App.dir/Assignment/Assignment.cpp.o: /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Assignment/Assignment.hpp
-CMakeFiles/Homework-App.dir/Assignment/Assignment.cpp.o: /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/core.hpp
+CMakeFiles/Homework-App.dir/Assignments/Assignment.cpp.o: /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Assignments/Assignment.cpp
+CMakeFiles/Homework-App.dir/Assignments/Assignment.cpp.o: /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Assignments/Assignment.hpp
+CMakeFiles/Homework-App.dir/Assignments/Assignment.cpp.o: /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/core.hpp
 
-CMakeFiles/Homework-App.dir/Class/Class.cpp.o: /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Class/Class.cpp
-CMakeFiles/Homework-App.dir/Class/Class.cpp.o: /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Class/Class.hpp
-CMakeFiles/Homework-App.dir/Class/Class.cpp.o: /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/core.hpp
+CMakeFiles/Homework-App.dir/Classes/Class.cpp.o: /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Classes/Class.cpp
+CMakeFiles/Homework-App.dir/Classes/Class.cpp.o: /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Classes/Class.hpp
+CMakeFiles/Homework-App.dir/Classes/Class.cpp.o: /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/core.hpp
 
 CMakeFiles/Homework-App.dir/States/MainMenu.cpp.o: /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/States/MainMenu.cpp
 CMakeFiles/Homework-App.dir/States/MainMenu.cpp.o: /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/States/MainMenu.hpp
@@ -22,6 +22,22 @@ CMakeFiles/Homework-App.dir/States/MainMenu.cpp.o: /mnt/c/users/jacob/onedrive/d
 
 CMakeFiles/Homework-App.dir/States/State.cpp.o: /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/States/State.cpp
 CMakeFiles/Homework-App.dir/States/State.cpp.o: /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/States/State.hpp
+
+CMakeFiles/Homework-App.dir/Trackers/AssignmentTracker.cpp.o: /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Assignments/Assignment.hpp
+CMakeFiles/Homework-App.dir/Trackers/AssignmentTracker.cpp.o: /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Trackers/AssignmentTracker.cpp
+CMakeFiles/Homework-App.dir/Trackers/AssignmentTracker.cpp.o: /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Trackers/AssignmentTracker.hpp
+CMakeFiles/Homework-App.dir/Trackers/AssignmentTracker.cpp.o: /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Trackers/Tracker.hpp
+CMakeFiles/Homework-App.dir/Trackers/AssignmentTracker.cpp.o: /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/core.hpp
+
+CMakeFiles/Homework-App.dir/Trackers/ClassTracker.cpp.o: /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Classes/Class.hpp
+CMakeFiles/Homework-App.dir/Trackers/ClassTracker.cpp.o: /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Trackers/ClassTracker.cpp
+CMakeFiles/Homework-App.dir/Trackers/ClassTracker.cpp.o: /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Trackers/ClassTracker.hpp
+CMakeFiles/Homework-App.dir/Trackers/ClassTracker.cpp.o: /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Trackers/Tracker.hpp
+CMakeFiles/Homework-App.dir/Trackers/ClassTracker.cpp.o: /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/core.hpp
+
+CMakeFiles/Homework-App.dir/Trackers/Tracker.cpp.o: /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Trackers/Tracker.cpp
+CMakeFiles/Homework-App.dir/Trackers/Tracker.cpp.o: /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Trackers/Tracker.hpp
+CMakeFiles/Homework-App.dir/Trackers/Tracker.cpp.o: /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/core.hpp
 
 CMakeFiles/Homework-App.dir/main.cpp.o: /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/App.hpp
 CMakeFiles/Homework-App.dir/main.cpp.o: /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/States/MainMenu.hpp

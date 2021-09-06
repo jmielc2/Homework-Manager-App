@@ -109,31 +109,70 @@ CMakeFiles/Homework-App.dir/States/State.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Homework-App.dir/States/State.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/States/State.cpp -o CMakeFiles/Homework-App.dir/States/State.cpp.s
 
-CMakeFiles/Homework-App.dir/Class/Class.cpp.o: CMakeFiles/Homework-App.dir/flags.make
-CMakeFiles/Homework-App.dir/Class/Class.cpp.o: /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Class/Class.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Homework-App.dir/Class/Class.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Homework-App.dir/Class/Class.cpp.o -c /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Class/Class.cpp
+CMakeFiles/Homework-App.dir/Classes/Class.cpp.o: CMakeFiles/Homework-App.dir/flags.make
+CMakeFiles/Homework-App.dir/Classes/Class.cpp.o: /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Classes/Class.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Homework-App.dir/Classes/Class.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Homework-App.dir/Classes/Class.cpp.o -c /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Classes/Class.cpp
 
-CMakeFiles/Homework-App.dir/Class/Class.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Homework-App.dir/Class/Class.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Class/Class.cpp > CMakeFiles/Homework-App.dir/Class/Class.cpp.i
+CMakeFiles/Homework-App.dir/Classes/Class.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Homework-App.dir/Classes/Class.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Classes/Class.cpp > CMakeFiles/Homework-App.dir/Classes/Class.cpp.i
 
-CMakeFiles/Homework-App.dir/Class/Class.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Homework-App.dir/Class/Class.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Class/Class.cpp -o CMakeFiles/Homework-App.dir/Class/Class.cpp.s
+CMakeFiles/Homework-App.dir/Classes/Class.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Homework-App.dir/Classes/Class.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Classes/Class.cpp -o CMakeFiles/Homework-App.dir/Classes/Class.cpp.s
 
-CMakeFiles/Homework-App.dir/Assignment/Assignment.cpp.o: CMakeFiles/Homework-App.dir/flags.make
-CMakeFiles/Homework-App.dir/Assignment/Assignment.cpp.o: /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Assignment/Assignment.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Homework-App.dir/Assignment/Assignment.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Homework-App.dir/Assignment/Assignment.cpp.o -c /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Assignment/Assignment.cpp
+CMakeFiles/Homework-App.dir/Assignments/Assignment.cpp.o: CMakeFiles/Homework-App.dir/flags.make
+CMakeFiles/Homework-App.dir/Assignments/Assignment.cpp.o: /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Assignments/Assignment.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Homework-App.dir/Assignments/Assignment.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Homework-App.dir/Assignments/Assignment.cpp.o -c /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Assignments/Assignment.cpp
 
-CMakeFiles/Homework-App.dir/Assignment/Assignment.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Homework-App.dir/Assignment/Assignment.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Assignment/Assignment.cpp > CMakeFiles/Homework-App.dir/Assignment/Assignment.cpp.i
+CMakeFiles/Homework-App.dir/Assignments/Assignment.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Homework-App.dir/Assignments/Assignment.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Assignments/Assignment.cpp > CMakeFiles/Homework-App.dir/Assignments/Assignment.cpp.i
 
-CMakeFiles/Homework-App.dir/Assignment/Assignment.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Homework-App.dir/Assignment/Assignment.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Assignment/Assignment.cpp -o CMakeFiles/Homework-App.dir/Assignment/Assignment.cpp.s
+CMakeFiles/Homework-App.dir/Assignments/Assignment.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Homework-App.dir/Assignments/Assignment.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Assignments/Assignment.cpp -o CMakeFiles/Homework-App.dir/Assignments/Assignment.cpp.s
+
+CMakeFiles/Homework-App.dir/Trackers/Tracker.cpp.o: CMakeFiles/Homework-App.dir/flags.make
+CMakeFiles/Homework-App.dir/Trackers/Tracker.cpp.o: /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Trackers/Tracker.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Homework-App.dir/Trackers/Tracker.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Homework-App.dir/Trackers/Tracker.cpp.o -c /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Trackers/Tracker.cpp
+
+CMakeFiles/Homework-App.dir/Trackers/Tracker.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Homework-App.dir/Trackers/Tracker.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Trackers/Tracker.cpp > CMakeFiles/Homework-App.dir/Trackers/Tracker.cpp.i
+
+CMakeFiles/Homework-App.dir/Trackers/Tracker.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Homework-App.dir/Trackers/Tracker.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Trackers/Tracker.cpp -o CMakeFiles/Homework-App.dir/Trackers/Tracker.cpp.s
+
+CMakeFiles/Homework-App.dir/Trackers/AssignmentTracker.cpp.o: CMakeFiles/Homework-App.dir/flags.make
+CMakeFiles/Homework-App.dir/Trackers/AssignmentTracker.cpp.o: /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Trackers/AssignmentTracker.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Homework-App.dir/Trackers/AssignmentTracker.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Homework-App.dir/Trackers/AssignmentTracker.cpp.o -c /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Trackers/AssignmentTracker.cpp
+
+CMakeFiles/Homework-App.dir/Trackers/AssignmentTracker.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Homework-App.dir/Trackers/AssignmentTracker.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Trackers/AssignmentTracker.cpp > CMakeFiles/Homework-App.dir/Trackers/AssignmentTracker.cpp.i
+
+CMakeFiles/Homework-App.dir/Trackers/AssignmentTracker.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Homework-App.dir/Trackers/AssignmentTracker.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Trackers/AssignmentTracker.cpp -o CMakeFiles/Homework-App.dir/Trackers/AssignmentTracker.cpp.s
+
+CMakeFiles/Homework-App.dir/Trackers/ClassTracker.cpp.o: CMakeFiles/Homework-App.dir/flags.make
+CMakeFiles/Homework-App.dir/Trackers/ClassTracker.cpp.o: /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Trackers/ClassTracker.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Homework-App.dir/Trackers/ClassTracker.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Homework-App.dir/Trackers/ClassTracker.cpp.o -c /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Trackers/ClassTracker.cpp
+
+CMakeFiles/Homework-App.dir/Trackers/ClassTracker.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Homework-App.dir/Trackers/ClassTracker.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Trackers/ClassTracker.cpp > CMakeFiles/Homework-App.dir/Trackers/ClassTracker.cpp.i
+
+CMakeFiles/Homework-App.dir/Trackers/ClassTracker.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Homework-App.dir/Trackers/ClassTracker.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Trackers/ClassTracker.cpp -o CMakeFiles/Homework-App.dir/Trackers/ClassTracker.cpp.s
 
 # Object files for target Homework-App
 Homework__App_OBJECTS = \
@@ -141,8 +180,11 @@ Homework__App_OBJECTS = \
 "CMakeFiles/Homework-App.dir/App.cpp.o" \
 "CMakeFiles/Homework-App.dir/States/MainMenu.cpp.o" \
 "CMakeFiles/Homework-App.dir/States/State.cpp.o" \
-"CMakeFiles/Homework-App.dir/Class/Class.cpp.o" \
-"CMakeFiles/Homework-App.dir/Assignment/Assignment.cpp.o"
+"CMakeFiles/Homework-App.dir/Classes/Class.cpp.o" \
+"CMakeFiles/Homework-App.dir/Assignments/Assignment.cpp.o" \
+"CMakeFiles/Homework-App.dir/Trackers/Tracker.cpp.o" \
+"CMakeFiles/Homework-App.dir/Trackers/AssignmentTracker.cpp.o" \
+"CMakeFiles/Homework-App.dir/Trackers/ClassTracker.cpp.o"
 
 # External object files for target Homework-App
 Homework__App_EXTERNAL_OBJECTS =
@@ -151,11 +193,14 @@ Homework-App: CMakeFiles/Homework-App.dir/main.cpp.o
 Homework-App: CMakeFiles/Homework-App.dir/App.cpp.o
 Homework-App: CMakeFiles/Homework-App.dir/States/MainMenu.cpp.o
 Homework-App: CMakeFiles/Homework-App.dir/States/State.cpp.o
-Homework-App: CMakeFiles/Homework-App.dir/Class/Class.cpp.o
-Homework-App: CMakeFiles/Homework-App.dir/Assignment/Assignment.cpp.o
+Homework-App: CMakeFiles/Homework-App.dir/Classes/Class.cpp.o
+Homework-App: CMakeFiles/Homework-App.dir/Assignments/Assignment.cpp.o
+Homework-App: CMakeFiles/Homework-App.dir/Trackers/Tracker.cpp.o
+Homework-App: CMakeFiles/Homework-App.dir/Trackers/AssignmentTracker.cpp.o
+Homework-App: CMakeFiles/Homework-App.dir/Trackers/ClassTracker.cpp.o
 Homework-App: CMakeFiles/Homework-App.dir/build.make
 Homework-App: CMakeFiles/Homework-App.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Homework-App"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable Homework-App"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Homework-App.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

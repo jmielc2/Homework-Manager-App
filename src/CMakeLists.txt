@@ -4,5 +4,6 @@ project(Homework-App)
 
 add_executable(${PROJECT_NAME} main.cpp core.hpp App.cpp
                             States/MainMenu.cpp States/State.cpp
-                            Class/Class.cpp
-                            Assignment/Assignment.cpp)
+                            Classes/Class.cpp
+                            Assignments/Assignment.cpp
+                            Trackers/Tracker.cpp Trackers/AssignmentTracker.cpp Trackers/ClassTracker.cpp)

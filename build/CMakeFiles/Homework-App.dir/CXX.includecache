@@ -16,33 +16,9 @@ core.hpp
 States/MainMenu.hpp
 /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/States/MainMenu.hpp
 
-/mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Assignment/Assignment.cpp
-Assignment.hpp
-/mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Assignment/Assignment.hpp
-
-/mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Assignment/Assignment.hpp
-../core.hpp
-/mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/core.hpp
-
-/mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Class/Class.cpp
-Class.hpp
-/mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Class/Class.hpp
-
-/mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/Class/Class.hpp
-../core.hpp
-/mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/core.hpp
-
-/mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/States/MainMenu.cpp
-MainMenu.hpp
-/mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/States/MainMenu.hpp
-
 /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/States/MainMenu.hpp
 ../core.hpp
 /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/core.hpp
-State.hpp
-/mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/States/State.hpp
-
-/mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/States/State.cpp
 State.hpp
 /mnt/c/users/jacob/onedrive/documents/github/c++/homework-app/src/States/State.hpp
 
