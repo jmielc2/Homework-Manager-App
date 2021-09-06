@@ -3,3 +3,6 @@
 
 # Ignore Script Commands
 *.sh
+build/**
+debug/**
+CMakeFiles/**
