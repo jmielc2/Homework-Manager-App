@@ -13,5 +13,6 @@ App::~App() {
 // App Executor
 void App::run()  {
     MainMenu mainMenu;
+    cout << "Hello World!" << endl;
     return;
 };

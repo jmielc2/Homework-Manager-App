@@ -1,8 +1,2 @@
-# Auto detect text files and perform LF normalization
+Auto detect text files and perform LF normalization
 * text=auto
-
-# Ignore Script Commands
-*.sh
-build/**
-debug/**
-CMakeFiles/**

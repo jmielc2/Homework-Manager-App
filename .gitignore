@@ -1,0 +1,4 @@
+/build/**
+/build/CMakeFiles/**
+/CMakeFiles/**
+compile.sh
