@@ -5,6 +5,12 @@ Assignment::Assignment () {
     return;
 }
 
+Assignment::Assignment(wstring name, int category, tm dueDate) {
+    this->name = name;
+    this->category = category;
+    this->dueDate = dueDate;
+}
+
 // Assignment Destructor
 Assignment::~Assignment() {
     return;
@@ -19,23 +25,17 @@ wstring Assignment::getName() {
     return this->name;
 }
 
-void Assignment::setType(int assignmentType) {
-    this->type = assignmentType;
+void Assignment::setType(int category) {
+    this->category = category;
     return;
 }
 
 int Assignment::getType() {
-    return this->type;
+    return this->category;
 }
 
 void Assignment::setDueDate(int month, int day, int year) {
-    this->dueDate.month = month;
-    this->dueDate.day = day;
-    this->dueDate.year = year;
-}
-
-Assignment::Date Assignment::getDueDate() {
-    return this->dueDate;
+    return;
 }
 
 void Assignment::setPriority(int assignmentPriority) {

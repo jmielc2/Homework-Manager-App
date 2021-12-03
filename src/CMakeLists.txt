@@ -1,9 +1,8 @@
 cmake_minimum_required(VERSION 3.16.3)
 
-project(Homework-App)
+project(homework)
 
 add_executable(${PROJECT_NAME} main.cpp core.hpp App.cpp
-                            States/MainMenu.cpp States/State.cpp
+                            Commands/Commands.cpp
                             Classes/Class.cpp
-                            Assignments/Assignment.cpp
-                            Trackers/Tracker.cpp Trackers/AssignmentTracker.cpp Trackers/ClassTracker.cpp)
+                            Assignments/Assignment.cpp)

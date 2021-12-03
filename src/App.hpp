@@ -2,7 +2,6 @@
 #define APP_HPP
 
 #include "core.hpp"
-#include "States/MainMenu.hpp"
 
 class App {
 private:

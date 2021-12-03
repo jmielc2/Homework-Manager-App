@@ -2,20 +2,18 @@
 #define ASSIGNMENT_HPP
 
 #include "../core.hpp"
-enum {TEST, QUIZ, ESSAY, DISSCUSSION_POST, HOMEWORK, READING, LECTURE_VIDEO};
+
+enum {TEST, QUIZ, ESSAY, DISSCUSSION_POST, HOMEWORK, READING};
 
 class Assignment {
 private:
-    struct Date {
-        int month, day, year;
-    };
-
     wstring name;
-    int type;
+    int category;
     int priority;
-    Date dueDate;
+    tm dueDate;
 public:
     Assignment();
+    Assignment(std::wstring name, int category, tm dueDate);
     ~Assignment();
 
     // Accessors & Modifiers
@@ -26,7 +24,7 @@ public:
     int getType();
 
     void setDueDate(int month, int day, int year);
-    Date getDueDate();
+    tm* getDueDate();
 
     void setPriority(int assignmentPriority);
     int getPriority();
