@@ -1,4 +1,2 @@
-/build/**
-/build/CMakeFiles/**
-/CMakeFiles/**
-compile.sh
+# Build Folder
+build/

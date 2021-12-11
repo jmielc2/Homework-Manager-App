@@ -8,7 +8,7 @@ private:
 public:
     App ();
     ~App();
-    void run ();
+    void run (int cmdType, vector<string> &contents);
 };
 
 #endif

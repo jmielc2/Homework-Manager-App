@@ -11,6 +11,6 @@ App::~App() {
 }
 
 // App Executor
-void App::run()  {
+void App::run(int cmdType, vector<string> &contents)  {
     return;
 };

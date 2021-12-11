@@ -8,9 +8,11 @@ int main (int argc, char **argv) {
         printGeneralUsage();
         return 0;
     }
-    pair<string, vector<string>> command = parseCommand(argc, argv);
-    App app;
-    app.run();
+    pair<int, vector<string>> commandInfo = parseCommand(argc, argv);
+    if (commandInfo.first <= 2) {
+        App app;
+        app.run(commandInfo.first, commandInfo.second);
+    }
     
     return 0;
 }

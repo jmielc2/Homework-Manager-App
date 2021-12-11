@@ -48,21 +48,39 @@ void printGeneralUsage() {
 }
 
 
-pair<string, vector<string>> parseCommand(int argc, char ** argv) {
+vector<string> stripOptions(int argc, char **argv, int cmdType) {
+    if (argc == 2) {
+        return {};
+    }
+    vector<string> options;
+
+
+    return options;
+}
+
+
+pair<int, vector<string>> parseCommand(int argc, char **argv) {
     string cmd(argv[1]);
+    int cmdType;
     if (cmd == "add") {
+        cmdType = COMMANDS::ADD;
         cout << "RUN ADD" << endl;
     } else if (cmd == "remove") {
+        cmdType = COMMANDS::REMOVE;
         cout << "RUN REMOVE" << endl;
     } else if (cmd == "show") {
+        cmdType = COMMANDS::SHOW;
         cout << "RUN SHOW" << endl;
     } else if (cmd == "version") {
+        cmdType = COMMANDS::VERSION;
         cout << "homework " << VERSION_1 << "." << VERSION_2 << endl;
     } else if (cmd == "help") {
+        cmdType = COMMANDS::HELP;
         printGeneralUsage();
         printCommandOptions();
     } else {
+        cmdType = COMMANDS::NONE;
         printGeneralUsage();
     }
-    return {};
+    return pair<int, vector<string>> (cmdType, {});
 }

@@ -4,5 +4,6 @@
         "iostream": "cpp",
         "ostream": "cpp",
         "iomanip": "cpp"
-    }
+    },
+    "cmake.configureOnOpen": false
 }
