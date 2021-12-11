@@ -1,8 +1,8 @@
 #ifndef CORE_HPP
 #define CORE_HPP
 
-#define VERSION_1 1.00
-#define VERSION_2 0
+#define VERSION_P1 1.00
+#define VERSION_P2 0
 
 #include <iostream>
 #include <limits>
@@ -17,5 +17,11 @@
 #include <queue>
 
 using namespace std;
+
+struct flagNames {
+    int cmdType;
+    string className;
+    string assignment;
+};
 
 #endif

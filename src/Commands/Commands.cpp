@@ -17,21 +17,20 @@ void printCommands() {
 
 void printCommandOptions() {
     cout << "Options:" << endl;
-    cout << "  - add" << endl;
+    cout << "   add" << endl;
     cout << "\tNONE  =  No options. Will prompt user input." << endl;
-    cout << "\tclass <class name>  =  Specifies addition of a new class and its name." << endl;
-    cout << "\tassignment <class name> | <assignment name>  =  Specifies addition of an assignment, the class it is in, and its name." << endl;
-    cout << "  - remove" << endl;
+    cout << "\t-c <class name>  =  Specifies addition of a new class and its name." << endl;
+    cout << "\t-c <class name> -a <assignment name>  =  Specifies addition of an assignment, the class it is in, and its name." << endl;
+    cout << "   remove" << endl;
     cout << "\tNONE  =  No options. Will prompt user input." << endl;
-    cout << "\tclass <class name>  =  Specifies remove of a class and its name." << endl;
-    cout << "\tassignment <class name> | <assignment name>  =  Specifies removal of an assignment, the class it is in, and its name." << endl;
-    cout << "  - show" << endl;
+    cout << "\t-c <class name>  =  Specifies remove of a class and its name." << endl;
+    cout << "\t-c <class name> -a <assignment name>  =  Specifies removal of an assignment, the class it is in, and its name." << endl;
+    cout << "   show" << endl;
     cout << "\tNONE  =  No options. Displays all classes and their assignments." << endl;
-    cout << "\tall  =  Displays all classes and their assignments." << endl;
-    cout << "\t<class name>  =  Displays all assignments for the specified class." << endl;
-    cout << "  - version" << endl;
+    cout << "\t-c <class name>  =  Displays all assignments for the specified class." << endl;
+    cout << "   version" << endl;
     cout << "\tNONE  =  No options. Displays the current app version." << endl;
-    cout << "  - help" << endl;
+    cout << "   help" << endl;
     cout << "\tNONE  =  No options. Displays the apps commands and options formatting." << endl;
 }
 
@@ -48,39 +47,66 @@ void printGeneralUsage() {
 }
 
 
-vector<string> stripOptions(int argc, char **argv, int cmdType) {
-    if (argc == 2) {
-        return {};
+bool getFlags(int argc, char **argv, flagNames &options) {
+    int i = 2;
+    while (i < argc) {
+        if (string(argv[i]) == "-c") {
+            i++;
+            while (i < argc && argv[i][0] != '-') {
+                options.className += string(argv[i]) + " ";
+                i++;
+            }
+            options.className = options.className.substr(0, options.className.size() - 1);
+        } else if (string(argv[i]) == "-a") {
+            i++;
+            while (i < argc && argv[i][0] != '-') {
+                options.assignment += string(argv[i]) + " ";
+                i++;
+            }
+            options.assignment = options.assignment.substr(0, options.assignment.size() - 1);
+        } else {
+            i++;
+        }
     }
-    vector<string> options;
-
-
-    return options;
+    cout << "Class Name: '" << options.className << "'" << endl;
+    cout << "Assignment: '" << options.assignment << "'" << endl;
 }
 
 
-pair<int, vector<string>> parseCommand(int argc, char **argv) {
+bool parseCommand(int argc, char **argv, flagNames &options) {
     string cmd(argv[1]);
-    int cmdType;
+    options.className = options.assignment = "";
     if (cmd == "add") {
-        cmdType = COMMANDS::ADD;
-        cout << "RUN ADD" << endl;
+        options.cmdType = COMMANDS::ADD;
+        if (argc > 2) {
+            getFlags(argc, argv, options);
+            return true;
+        }
     } else if (cmd == "remove") {
-        cmdType = COMMANDS::REMOVE;
-        cout << "RUN REMOVE" << endl;
+        options.cmdType = COMMANDS::REMOVE;
+        if (argc > 2) {
+            getFlags(argc, argv, options);
+            return true;
+        }
     } else if (cmd == "show") {
-        cmdType = COMMANDS::SHOW;
-        cout << "RUN SHOW" << endl;
+        options.cmdType = COMMANDS::SHOW;
+        if (argc > 2) {
+            getFlags(argc, argv, options);
+            return true;
+        }
     } else if (cmd == "version") {
-        cmdType = COMMANDS::VERSION;
-        cout << "homework " << VERSION_1 << "." << VERSION_2 << endl;
+        options.cmdType = COMMANDS::VERSION;
+        cout << "homework " << VERSION_P1 << "." << VERSION_P2 << endl;
+        return false;
     } else if (cmd == "help") {
-        cmdType = COMMANDS::HELP;
+        options.cmdType = COMMANDS::HELP;
         printGeneralUsage();
         printCommandOptions();
+        return false;
     } else {
-        cmdType = COMMANDS::NONE;
+        options.cmdType = COMMANDS::NONE;
         printGeneralUsage();
+        return false;
     }
-    return pair<int, vector<string>> (cmdType, {});
+    return false;
 }

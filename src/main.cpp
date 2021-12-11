@@ -8,10 +8,10 @@ int main (int argc, char **argv) {
         printGeneralUsage();
         return 0;
     }
-    pair<int, vector<string>> commandInfo = parseCommand(argc, argv);
-    if (commandInfo.first <= 2) {
-        App app;
-        app.run(commandInfo.first, commandInfo.second);
+    
+    flagNames options;
+    if (parseCommand(argc, argv, options)) {
+        runApp(options);
     }
     
     return 0;

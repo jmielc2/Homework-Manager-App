@@ -33,6 +33,6 @@ extern void printGeneralUsage();
 /*
 parseCommand():
 */
-extern pair<int, vector<string>> parseCommand(int argc, char **argv);
+extern bool parseCommand(int argc, char **argv, flagNames &options);
 
 #endif
