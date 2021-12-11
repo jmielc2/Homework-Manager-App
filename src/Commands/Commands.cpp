@@ -1,7 +1,8 @@
 #include "Commands.hpp"
 
-void setup() {
+set<Class> setup() {
     cout << fixed << setprecision(2);
+    return {};
 }
 
 
@@ -78,35 +79,24 @@ bool parseCommand(int argc, char **argv, flagNames &options) {
     options.className = options.assignment = "";
     if (cmd == "add") {
         options.cmdType = COMMANDS::ADD;
-        if (argc > 2) {
-            getFlags(argc, argv, options);
-            return true;
-        }
+        getFlags(argc, argv, options);
+        return true;
     } else if (cmd == "remove") {
         options.cmdType = COMMANDS::REMOVE;
-        if (argc > 2) {
-            getFlags(argc, argv, options);
-            return true;
-        }
+        getFlags(argc, argv, options);
+        return true;
     } else if (cmd == "show") {
         options.cmdType = COMMANDS::SHOW;
-        if (argc > 2) {
-            getFlags(argc, argv, options);
-            return true;
-        }
+        getFlags(argc, argv, options);
+        return true;
     } else if (cmd == "version") {
-        options.cmdType = COMMANDS::VERSION;
         cout << "homework " << VERSION_P1 << "." << VERSION_P2 << endl;
         return false;
     } else if (cmd == "help") {
-        options.cmdType = COMMANDS::HELP;
         printGeneralUsage();
         printCommandOptions();
         return false;
-    } else {
-        options.cmdType = COMMANDS::NONE;
-        printGeneralUsage();
-        return false;
     }
+    printGeneralUsage();
     return false;
 }

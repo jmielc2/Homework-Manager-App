@@ -5,23 +5,25 @@
 #define VERSION_P2 0
 
 #include <iostream>
-#include <limits>
-#include <algorithm>
 #include <iomanip>
-#include <ctime>
 #include <string>
 #include <typeinfo>  // DELETE
 
+#include <set>
 #include <map>
 #include <vector>
-#include <queue>
 
 using namespace std;
+
+enum COMMANDS {ADD, REMOVE, SHOW, VERSION, HELP, NONE};
 
 struct flagNames {
     int cmdType;
     string className;
     string assignment;
 };
+
+#include "Assignments/Assignment.hpp"
+#include "Classes/Class.hpp"
 
 #endif

@@ -3,7 +3,7 @@
 #include "App.hpp"
 
 int main (int argc, char **argv) {
-    setup();
+    set<Class> myClasses = setup();
     if (argc == 1) {
         printGeneralUsage();
         return 0;
@@ -11,7 +11,7 @@ int main (int argc, char **argv) {
     
     flagNames options;
     if (parseCommand(argc, argv, options)) {
-        runApp(options);
+        runApp(options, myClasses);
     }
     
     return 0;

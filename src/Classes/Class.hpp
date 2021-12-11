@@ -8,6 +8,8 @@ private:
 public:
     Class();
     ~Class();
+    bool operator== (Class &rhs);
+    bool operator!= (Class &rhs);
 };
 
 #endif

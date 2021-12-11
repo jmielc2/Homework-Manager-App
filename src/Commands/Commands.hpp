@@ -1,14 +1,12 @@
-#include "../core.hpp"
-
 #ifndef COMMANDS_HPP
 #define COMMANDS_HPP
 
-enum COMMANDS {ADD, REMOVE, SHOW, VERSION, HELP, NONE};
+#include "../core.hpp"
 
 /*
 setup():
 */
-extern void setup();
+extern set<Class> setup();
 
 /*
 printCommands():
