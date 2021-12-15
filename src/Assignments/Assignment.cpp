@@ -5,7 +5,7 @@ Assignment::Assignment () {
     return;
 }
 
-Assignment::Assignment(wstring name, int category, tm dueDate) {
+Assignment::Assignment(std::string name, int category, tm dueDate) {
     this->name = name;
     this->category = category;
     this->dueDate = dueDate;
@@ -16,12 +16,12 @@ Assignment::~Assignment() {
     return;
 }
 
-void Assignment::setName(wstring assignmentName) {
+void Assignment::setName(std::string assignmentName) {
     this->name = assignmentName;
     return;
 }
 
-wstring Assignment::getName() {
+std::string Assignment::getName() {
     return this->name;
 }
 

@@ -7,18 +7,18 @@ enum {TEST, QUIZ, ESSAY, DISSCUSSION_POST, HOMEWORK, READING};
 
 class Assignment {
 private:
-    wstring name;
+    std::string name;
     int category;
     int priority;
     tm dueDate;
 public:
     Assignment();
-    Assignment(std::wstring name, int category, tm dueDate);
+    Assignment(std::string name, int category, tm dueDate);
     ~Assignment();
 
     // Accessors & Modifiers
-    void setName(wstring assignmentName);
-    wstring getName();
+    void setName(std::string assignmentName);
+    std::string getName();
 
     void setType(int assignmentType);
     int getType();

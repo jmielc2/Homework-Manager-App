@@ -3,6 +3,6 @@
 
 #include "core.hpp"
 
-extern void runApp (const flagNames options, set<Class> &myClasses);
+extern void runApp (const flagNames options, std::set<Class> &myClasses);
 
 #endif

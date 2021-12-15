@@ -6,7 +6,7 @@
 /*
 setup():
 */
-extern set<Class> setup();
+extern std::set<Class> setup();
 
 /*
 printCommands():
