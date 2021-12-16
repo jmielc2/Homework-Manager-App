@@ -81,6 +81,7 @@ bool getFlags(int argc, char **argv, flagNames &options) {
     }
     std::cout << "Class Name: '" << options.className << "'" << std::endl;
     std::cout << "Assignment: '" << options.assignment << "'" << std::endl;
+    return true;
 }
 
 

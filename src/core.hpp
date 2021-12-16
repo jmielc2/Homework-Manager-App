@@ -7,15 +7,16 @@
 #include <iostream>
 #include <fstream>
 #include <cstdlib>
-#include <experimental/filesystem>
+#include <filesystem>
 #include <iomanip>
 #include <string>
 #include <set>
 #include <map>
 #include <vector>
+#include "nlohmann/json.hpp"
 
 // using namespace std;
-namespace fs = std::experimental::filesystem;
+namespace fs = std::filesystem;
 
 enum COMMANDS {ADD, REMOVE, SHOW, VERSION, HELP, NONE};
 
