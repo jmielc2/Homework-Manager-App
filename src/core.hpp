@@ -1,5 +1,5 @@
 #ifndef CORE_HPP
-#define CORE_HPP
+#define CORE_HPP 1
 
 #define VERSION_P1 1.00
 #define VERSION_P2 0
@@ -13,10 +13,10 @@
 #include <set>
 #include <map>
 #include <vector>
-#include "nlohmann/json.hpp"
+#include "include/json.hpp"
 
-// using namespace std;
 namespace fs = std::filesystem;
+using json = nlohmann::json;
 
 enum COMMANDS {ADD, REMOVE, SHOW, VERSION, HELP, NONE};
 

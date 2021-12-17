@@ -4,11 +4,6 @@
 #include "../core.hpp"
 
 /*
-setup():
-*/
-extern std::set<Class> setup();
-
-/*
 printCommands():
 */
 extern void printCommands();
@@ -27,10 +22,5 @@ extern void printUsage();
 printGeneralUsage():
 */
 extern void printGeneralUsage();
-
-/*
-parseCommand():
-*/
-extern bool parseCommand(int argc, char **argv, flagNames &options);
 
 #endif

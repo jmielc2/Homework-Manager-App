@@ -8,5 +8,5 @@ project(homework VERSION 1.00.0)
 
 add_executable(${PROJECT_NAME} main.cpp core.hpp App.cpp
                             Commands/Commands.cpp
-                            Classes/Class.cpp
-                            Assignments/Assignment.cpp)
+                            Assignments/Assignment.cpp
+                            Classes/Class.cpp)

@@ -1,33 +1,19 @@
 #ifndef ASSIGNMENT_HPP
-#define ASSIGNMENT_HPP
+#define ASSIGNMENT_HPP 1
 
-#include "../core.hpp"
-
-enum {TEST, QUIZ, ESSAY, DISSCUSSION_POST, HOMEWORK, READING};
+#include <string>
 
 class Assignment {
 private:
-    std::string name;
-    int category;
-    int priority;
-    tm dueDate;
+    std::string assignmentName;
 public:
     Assignment();
-    Assignment(std::string name, int category, tm dueDate);
+    Assignment(std::string name);
     ~Assignment();
 
     // Accessors & Modifiers
-    void setName(std::string assignmentName);
+    void setName(std::string name);
     std::string getName();
-
-    void setType(int assignmentType);
-    int getType();
-
-    void setDueDate(int month, int day, int year);
-    tm* getDueDate();
-
-    void setPriority(int assignmentPriority);
-    int getPriority();
 };
 
 #endif

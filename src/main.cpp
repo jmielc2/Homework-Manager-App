@@ -3,7 +3,7 @@
 #include "App.hpp"
 
 int main (int argc, char **argv) {
-    std::set<Class> myClasses = setup();
+    std::set<Class> myClasses = setupApp();
     if (argc == 1) {
         printGeneralUsage();
         return 0;
