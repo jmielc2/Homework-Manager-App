@@ -1,36 +1,40 @@
 #include "App.hpp"
-#include "Commands/Commands.hpp"
 
-std::set<Class> createClasses(const fs::path &dataFilePath) {
-    json classData;
-
+std::map<std::string, gen::classData> fetchClassData(const fs::path &dataFilePath) {
+    json data;
     std::ifstream inFile(dataFilePath);
-    inFile >> classData;
+    inFile >> data;
     inFile.close();
-    std::cout << classData << std::endl;
-
-    std::cout << classData["CS 211"]["assignments"] << std::endl;
-    std::cout << classData["CS 251"]["assignments"] << std::endl;
-
-    return {};
+    std::map<std::string, gen::classData> myClasses;
+    for (auto a : data.at("data")) {
+        myClasses.emplace(a["class name"], a.get<gen::classData>());
+    }
+    return myClasses;
 }
 
-std::set<Class> setupApp() {
-    std::cout << std::fixed << std::setprecision(2);
-    fs::path dataFolderPath("./data");
-    fs::path dataFilePath("./data/class-data.json");
-    
-    if (!fs::exists(dataFolderPath)) {
-        fs::create_directory(dataFolderPath);
+void saveClassData(std::map<std::string, gen::classData> &myClasses, const fs::path &dataFilePath) {
+    json data;
+    for (auto it = myClasses.begin(); it != myClasses.end(); it++) {
+        data["data"].push_back(it->second);
     }
-    if (!fs::exists(dataFilePath)) {
-        std::ofstream dataFile(dataFilePath);
+    std::ofstream outFile(dataFilePath);
+    outFile << std::setw(4) << data << std::endl;
+    outFile.close();
+}
+
+std::map<std::string, gen::classData> setupApp() {
+    std::cout << std::fixed << std::setprecision(2);
+    if (!fs::exists(gen::dataFolderPath)) {
+        fs::create_directory(gen::dataFolderPath);
+    }
+    if (!fs::exists(gen::dataFilePath)) {
+        std::ofstream dataFile(gen::dataFilePath);
         dataFile.close();
     }
-    return createClasses(dataFilePath);
+    return fetchClassData(gen::dataFilePath);
 }
 
-bool getFlags(int argc, char **argv, flagNames &options) {
+bool getFlags(int argc, char **argv, gen::flagNames &options) {
     int i = 2;
     while (i < argc) {
         if (std::string(argv[i]) == "-c") {
@@ -56,7 +60,7 @@ bool getFlags(int argc, char **argv, flagNames &options) {
     return true;
 }
 
-bool parseCommand(int argc, char **argv, flagNames &options) {
+bool parseCommand(int argc, char **argv, gen::flagNames &options) {
     std::string cmd(argv[1]);
     options.className = options.assignment = "";
     if (cmd == "add") {
@@ -83,7 +87,7 @@ bool parseCommand(int argc, char **argv, flagNames &options) {
     return false;
 }
 
-void runApp (const flagNames options, std::set<Class> &myClasses)  {
+void runApp (const gen::flagNames options, std::map<std::string, gen::classData> &myClasses)  {
     switch (options.cmdType) {
         case(COMMANDS::ADD):
             std::cout << "Running Add..." << std::endl;
@@ -95,4 +99,5 @@ void runApp (const flagNames options, std::set<Class> &myClasses)  {
             std::cout << "Running Show..." << std::endl;
             break;
     }
+    saveClassData(myClasses, gen::testFilePath);
 };

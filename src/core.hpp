@@ -4,6 +4,9 @@
 #define VERSION_P1 1.00
 #define VERSION_P2 0
 
+// #include <typeinfo> // DELETE
+
+// Standard Libraries
 #include <iostream>
 #include <fstream>
 #include <cstdlib>
@@ -13,20 +16,24 @@
 #include <set>
 #include <map>
 #include <vector>
+
+// Github Libraries
 #include "include/json.hpp"
 
 namespace fs = std::filesystem;
 using json = nlohmann::json;
 
-enum COMMANDS {ADD, REMOVE, SHOW, VERSION, HELP, NONE};
+// Self-made Classes & Namespaces
+#include "Components/Assignment.hpp"
+#include "General/Structures.hpp"
+#include "General/Commands.hpp"
 
-struct flagNames {
-    int cmdType;
-    std::string className;
-    std::string assignment;
+namespace gen {
+    const fs::path dataFolderPath("./data");
+    const fs::path dataFilePath("./data/class-data.json");
+    const fs::path testFilePath("./data/test.json");
 };
 
-#include "Assignments/Assignment.hpp"
-#include "Classes/Class.hpp"
+enum COMMANDS {ADD, REMOVE, SHOW, VERSION, HELP, NONE};
 
 #endif

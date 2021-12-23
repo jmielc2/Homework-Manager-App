@@ -3,10 +3,12 @@
 
 #include "core.hpp"
 
-extern std::set<Class> setupApp();
+extern std::map<std::string, gen::classData> setupApp();
 
-extern bool parseCommand(int argc, char** argv, flagNames &options);
+extern bool parseCommand(int argc, char** argv, gen::flagNames &options);
 
-extern void runApp (const flagNames options, std::set<Class> &myClasses);
+extern void saveClassData(std::map<std::string, gen::classData> &myClasses, const fs::path &dataFilePath);
+
+extern void runApp (const gen::flagNames options, std::map<std::string, gen::classData> &myClasses);
 
 #endif

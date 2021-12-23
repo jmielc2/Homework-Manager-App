@@ -1,15 +1,13 @@
-#include "core.hpp"
-#include "Commands/Commands.hpp"
 #include "App.hpp"
 
 int main (int argc, char **argv) {
-    std::set<Class> myClasses = setupApp();
+    std::map<std::string, gen::classData> myClasses = setupApp();
     if (argc == 1) {
         printGeneralUsage();
         return 0;
     }
     
-    flagNames options;
+    gen::flagNames options;
     if (parseCommand(argc, argv, options)) {
         runApp(options, myClasses);
     }
