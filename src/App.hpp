@@ -2,6 +2,7 @@
 #define APP_HPP 1
 
 #include "core.hpp"
+#include "Operations/Show.hpp"
 
 extern std::map<std::string, gen::classData> setupApp();
 

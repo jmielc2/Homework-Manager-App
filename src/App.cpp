@@ -34,7 +34,7 @@ std::map<std::string, gen::classData> setupApp() {
     return fetchClassData(gen::dataFilePath);
 }
 
-bool getFlags(int argc, char **argv, gen::flagNames &options) {
+void getFlags(int argc, char **argv, gen::flagNames &options) {
     int i = 2;
     while (i < argc) {
         if (std::string(argv[i]) == "-c") {
@@ -55,48 +55,49 @@ bool getFlags(int argc, char **argv, gen::flagNames &options) {
             i++;
         }
     }
-    std::cout << "Class Name: '" << options.className << "'" << std::endl;
-    std::cout << "Assignment: '" << options.assignment << "'" << std::endl;
-    return true;
 }
 
 bool parseCommand(int argc, char **argv, gen::flagNames &options) {
     std::string cmd(argv[1]);
     options.className = options.assignment = "";
     if (cmd == "add") {
-        options.cmdType = COMMANDS::ADD;
+        options.cmdType = gen::ADD;
         getFlags(argc, argv, options);
         return true;
     } else if (cmd == "remove") {
-        options.cmdType = COMMANDS::REMOVE;
+        options.cmdType = gen::REMOVE;
         getFlags(argc, argv, options);
         return true;
     } else if (cmd == "show") {
-        options.cmdType = COMMANDS::SHOW;
+        options.cmdType = gen::SHOW;
         getFlags(argc, argv, options);
         return true;
     } else if (cmd == "version") {
         std::cout << "homework " << VERSION_P1 << "." << VERSION_P2 << std::endl;
         return false;
     } else if (cmd == "help") {
-        printGeneralUsage();
-        printCommandOptions();
+        cmd::printGeneralUsage();
+        cmd::printCommandOptions();
         return false;
     }
-    printGeneralUsage();
+    cmd::printGeneralUsage();
     return false;
 }
 
 void runApp (const gen::flagNames options, std::map<std::string, gen::classData> &myClasses)  {
     switch (options.cmdType) {
-        case(COMMANDS::ADD):
+        case(gen::ADD):
             std::cout << "Running Add..." << std::endl;
             break;
-        case(COMMANDS::REMOVE):
+        case(gen::REMOVE):
             std::cout << "Running Remove..." << std::endl;
             break;
-        case(COMMANDS::SHOW):
-            std::cout << "Running Show..." << std::endl;
+        case(gen::SHOW):
+            if (myClasses.size() == 0) {
+                std::cout << "You have no classes saved, add some to track your assignments." << std::endl;
+            } else {
+                show::runShow(options, myClasses);
+            }
             break;
     }
     saveClassData(myClasses, gen::testFilePath);

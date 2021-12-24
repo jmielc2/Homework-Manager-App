@@ -9,11 +9,9 @@
 // Standard Libraries
 #include <iostream>
 #include <fstream>
-#include <cstdlib>
 #include <filesystem>
 #include <iomanip>
 #include <string>
-#include <set>
 #include <map>
 #include <vector>
 
@@ -32,8 +30,7 @@ namespace gen {
     const fs::path dataFolderPath("./data");
     const fs::path dataFilePath("./data/class-data.json");
     const fs::path testFilePath("./data/test.json");
+    enum {ADD, REMOVE, SHOW, VERSION, HELP, NONE};
 };
-
-enum COMMANDS {ADD, REMOVE, SHOW, VERSION, HELP, NONE};
 
 #endif

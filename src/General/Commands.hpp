@@ -3,24 +3,26 @@
 
 #include "../core.hpp"
 
-/*
-printCommands():
-*/
-extern void printCommands();
+namespace cmd {
+    /*
+    printCommands():
+    */
+    extern void printCommands();
 
-/*
-printCommandOptions():
-*/
-extern void printCommandOptions();
+    /*
+    printCommandOptions():
+    */
+    extern void printCommandOptions();
 
-/*
-printUsage():
-*/
-extern void printUsage();
+    /*
+    printUsage():
+    */
+    extern void printUsage();
 
-/*
-printGeneralUsage():
-*/
-extern void printGeneralUsage();
+    /*
+    printGeneralUsage():
+    */
+    extern void printGeneralUsage();
+};
 
 #endif

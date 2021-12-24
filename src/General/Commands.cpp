@@ -1,16 +1,16 @@
 #include "Commands.hpp"
 
-void printCommands() {
+void cmd::printCommands() {
     std::cout << "Commands:" << std::endl;
     std::cout << "\tadd  =  Add a class or assignment." << std::endl;
     std::cout << "\tremove  =  Remove a class or assignment." << std::endl;
     std::cout << "\tshow  =  Display class or assignment." << std::endl;
     std::cout << "\tversion  =  Display current app version." << std::endl;
-    std::cout << "\thelp   =  Display commands and options." << std::endl << std::endl;
+    std::cout << "\thelp   =  Display commands and options." << std::endl;
 }
 
 
-void printCommandOptions() {
+void cmd::printCommandOptions() {
     std::cout << "Options:" << std::endl;
     std::cout << "   add" << std::endl;
     std::cout << "\tNONE  =  No options. Will prompt user input." << std::endl;
@@ -30,13 +30,13 @@ void printCommandOptions() {
 }
 
 
-void printUsage() {
+void cmd::printUsage() {
     std::cout << "Usage" << std::endl << std::endl;
     std::cout << "\thomework <command> [options]" << std::endl << std::endl;
 }
 
 
-void printGeneralUsage() {
-    printUsage();
-    printCommands();
+void cmd::printGeneralUsage() {
+    cmd::printUsage();
+    cmd::printCommands();
 }
