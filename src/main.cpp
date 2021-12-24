@@ -11,7 +11,6 @@ int main (int argc, char **argv) {
     if (parseCommand(argc, argv, options)) {
         runApp(options, myClasses);
     }
-    std::cout << std::endl;
     
     return 0;
 }

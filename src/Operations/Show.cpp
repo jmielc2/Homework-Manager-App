@@ -11,7 +11,7 @@ void printClassInfo (const gen::classData &data) {
     if (data.assignments.size() >= 1) {
         std::cout << std::setw(5) << "(" << i + 1 <<") " << data.assignments.at(i).getName() << std::endl;
     } else {
-        std::cout << std::setw(4) << "" << "No assignments here!" << std::endl;
+        std::cout << std::setw(4) << "" << "No assignments!" << std::endl;
     }
     std::cout << std::endl;
 }
@@ -24,7 +24,6 @@ void show::runShow(const gen::flagNames &options, const std::map<std::string, ge
     } else if (myClasses.count(options.className)) {
         printClassInfo(myClasses.at(options.className));
     } else {
-        std::cout << "Error: class name '" << options.className << "' was not found." << std::endl << std::endl;
-        cmd::printCommandOptions();
+        std::cout << "Class '" << options.className << "' was not found." << std::endl << std::endl;
     }
 }

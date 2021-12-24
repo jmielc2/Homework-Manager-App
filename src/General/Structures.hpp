@@ -14,7 +14,6 @@ namespace gen {
         std::string className;
         std::vector<amnt::Assignment> assignments;
         std::string professor;
-        double grade;
     };
 
     extern void to_json(json &j, const classData &d);

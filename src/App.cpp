@@ -94,7 +94,7 @@ void runApp (const gen::flagNames options, std::map<std::string, gen::classData>
             break;
         case(gen::SHOW):
             if (myClasses.size() == 0) {
-                std::cout << "You have no classes saved, add some to track your assignments." << std::endl;
+                std::cout << "You have no classes saved, add some to track your assignments." << std::endl << std::endl;
             } else {
                 show::runShow(options, myClasses);
             }
