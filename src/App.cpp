@@ -84,10 +84,10 @@ bool parseCommand(int argc, char **argv, gen::flagNames &options) {
     return false;
 }
 
-void runApp (const gen::flagNames options, std::map<std::string, gen::classData> &myClasses)  {
+void runApp (gen::flagNames &options, std::map<std::string, gen::classData> &myClasses)  {
     switch (options.cmdType) {
         case(gen::ADD):
-            std::cout << "Running Add..." << std::endl;
+            add::runAdd(options, myClasses);
             break;
         case(gen::REMOVE):
             std::cout << "Running Remove..." << std::endl;

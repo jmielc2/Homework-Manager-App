@@ -3,6 +3,7 @@
 void gen::to_json(json &j, const gen::classData &d) {
     j["class name"] = d.className;
     j["professor"] = d.professor;
+    j["assingnments"] = json::array();
     for (auto &assignment : d.assignments) {
         j["assignments"].push_back(assignment);
     }

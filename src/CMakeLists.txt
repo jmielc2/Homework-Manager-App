@@ -10,4 +10,5 @@ add_executable(${PROJECT_NAME} main.cpp App.cpp
                             General/Commands.cpp
                             General/Structures.cpp
                             Operations/Show.cpp
+                            Operations/Add.cpp
                             Components/Assignment.cpp)
