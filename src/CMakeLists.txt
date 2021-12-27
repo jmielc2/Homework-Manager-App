@@ -8,7 +8,7 @@ project(homework VERSION 1.00.0)
 
 add_executable(${PROJECT_NAME} main.cpp App.cpp
                             General/Commands.cpp
-                            General/Structures.cpp
-                            Operations/Show.cpp
-                            Operations/Add.cpp
+                            General/General.cpp
+                            Commands/Show.cpp
+                            Commands/Add.cpp
                             Components/Assignment.cpp)

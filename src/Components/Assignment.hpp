@@ -7,7 +7,7 @@
 using json = nlohmann::json;
 
 namespace amnt {
-    enum type {HOMEWORK, ESSAY, EXAM, PROJECT, OTHER};
+    enum {HOMEWORK = 1, ESSAY, EXAM, PROJECT, OTHER};
 
     class Assignment {
     private:

@@ -4,8 +4,6 @@
 #define VERSION_P1 1.00
 #define VERSION_P2 0
 
-// #include <typeinfo> // DELETE
-
 // Standard Libraries
 #include <iostream>
 #include <fstream>
@@ -23,7 +21,7 @@ using json = nlohmann::json;
 
 // Self-made Classes & Namespaces
 #include "Components/Assignment.hpp"
-#include "General/Structures.hpp"
+#include "General/General.hpp"
 #include "General/Commands.hpp"
 
 namespace gen {

@@ -19,6 +19,16 @@ namespace gen {
     extern void to_json(json &j, const classData &d);
 
     extern void from_json(const json &j, classData &d);
+
+    extern void getClassName(std::string &className);
+
+    extern bool confirmClassName(std::string &className);
+
+    extern void getProffessorName(std::string &proffessor);
+    
+    extern void getAssignmentName(std::string &assignmentName);
+
+    extern void getAssignmentType(int &type);
 };
 
 #endif

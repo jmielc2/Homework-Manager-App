@@ -31,20 +31,20 @@ std::map<std::string, gen::classData> setupApp() {
         std::ofstream dataFile(gen::dataFilePath);
         dataFile.close();
     }
-    return fetchClassData(gen::dataFilePath);
+    return fetchClassData(gen::testFilePath); // UPDATE FOR FINAL RELEASE
 }
 
 void getFlags(int argc, char **argv, gen::flagNames &options) {
     int i = 2;
     while (i < argc) {
-        if (std::string(argv[i]) == "-c") {
+        if (std::string(argv[i]) == "-c" || std::string(argv[i]) == "-C") {
             i++;
             while (i < argc && argv[i][0] != '-') {
                 options.className += std::string(argv[i]) + " ";
                 i++;
             }
             options.className = options.className.substr(0, options.className.size() - 1);
-        } else if (std::string(argv[i]) == "-a") {
+        } else if (std::string(argv[i]) == "-a" || std::string(argv[i]) == "-A") {
             i++;
             while (i < argc && argv[i][0] != '-') {
                 options.assignment += std::string(argv[i]) + " ";
@@ -100,5 +100,5 @@ void runApp (gen::flagNames &options, std::map<std::string, gen::classData> &myC
             }
             break;
     }
-    saveClassData(myClasses, gen::testFilePath);
+    saveClassData(myClasses, gen::testFilePath);  // UPDATE FOR FINAL RELEASE
 };
