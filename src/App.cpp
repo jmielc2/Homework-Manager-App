@@ -90,7 +90,7 @@ void runApp (gen::flagNames &options, std::map<std::string, gen::classData> &myC
             add::runAdd(options, myClasses);
             break;
         case(gen::REMOVE):
-            std::cout << "Running Remove..." << std::endl;
+            rm::runRemove(options, myClasses);
             break;
         case(gen::SHOW):
             if (myClasses.size() == 0) {

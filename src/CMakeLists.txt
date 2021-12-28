@@ -11,4 +11,5 @@ add_executable(${PROJECT_NAME} main.cpp App.cpp
                             General/General.cpp
                             Commands/Show.cpp
                             Commands/Add.cpp
+                            Commands/Remove.cpp
                             Components/Assignment.cpp)

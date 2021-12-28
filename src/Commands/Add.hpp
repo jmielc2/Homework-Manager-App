@@ -1,3 +1,6 @@
+#ifndef ADD_HPP
+#define ADD_HPP 1
+
 #include "../core.hpp"
 
 namespace add {
@@ -7,3 +10,5 @@ namespace add {
 
     extern void runAdd(gen::flagNames &options, std::map<std::string, gen::classData> &myClasses);
 };
+
+#endif

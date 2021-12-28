@@ -4,6 +4,7 @@
 #include "core.hpp"
 #include "Commands/Show.hpp"
 #include "Commands/Add.hpp"
+#include "Commands/Remove.hpp"
 
 extern std::map<std::string, gen::classData> setupApp();
 
