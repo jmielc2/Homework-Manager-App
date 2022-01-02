@@ -22,7 +22,7 @@ namespace gen {
 
     extern void getClassName(std::string &className);
 
-    extern bool confirmClassName(std::string &className);
+    extern bool confirm();
 
     extern void getProffessorName(std::string &proffessor);
     

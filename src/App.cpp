@@ -73,7 +73,7 @@ bool parseCommand(int argc, char **argv, gen::flagNames &options) {
         getFlags(argc, argv, options);
         return true;
     } else if (cmd == "version") {
-        std::cout << "homework " << VERSION_P1 << "." << VERSION_P2 << std::endl;
+        std::cout << "homework " << VERSION_NO << std::endl << std::endl;
         return false;
     } else if (cmd == "help") {
         cmd::printGeneralUsage();

@@ -32,8 +32,7 @@ void gen::getProffessorName(std::string &proffessor) {
     std::getline(std::cin, proffessor);
 }
 
-bool gen::confirmClassName(std::string &className) {
-    std::cout << "Class '" << className << "' was NOT found. Would you like to add it? (Yes/No): ";
+bool gen::confirm() {
     std::string ans;
     std::getline(std::cin, ans);
     if (ans.find("Yes") != std::string::npos || ans.find("yes") != std::string::npos

@@ -4,7 +4,7 @@ void add::addClass(const gen::flagNames &options, std::map<std::string, gen::cla
     myClasses.emplace(options.className, gen::classData());
     myClasses.at(options.className).className = options.className;
     gen::getProffessorName(myClasses.at(options.className).professor);
-    std::cout << "The class '" << options.className << "' has been created." << std::endl << std::endl;
+    std::cout << "Class " << options.className << " has been created." << std::endl << std::endl;
 }
 
 void add::addAssignment(const gen::flagNames &options, std::map<std::string, gen::classData> &myClasses) {
@@ -21,7 +21,9 @@ void add::runAdd(gen::flagNames &options, std::map<std::string, gen::classData> 
             gen::getClassName(options.className);
         }
         if (!myClasses.count(options.className)) {
-            if (gen::confirmClassName(options.className)) {
+            std::cout << "Class " << options.className << " was not found." << std::endl;
+            std::cout << "Class " << options.className << " will be created. Do you want to proceed? (Yes/No): ";
+            if (gen::confirm()) {
                 addClass(options, myClasses);
                 addedClass = true;
                 break;
@@ -47,10 +49,9 @@ void add::runAdd(gen::flagNames &options, std::map<std::string, gen::classData> 
         }
     }
     if (found) {
-        std::cout << "An assignment by the name of '" << options.assignment << "' already exists for '" << options.className <<"'." << std::endl << std::endl;
+        std::cout << "Assignment " << options.assignment << " for " << options.className << " already exists." << std::endl << std::endl;
     } else {
-        std::cout << "Adding '" << options.assignment << "' to '" << options.className << "'." << std::endl;
         addAssignment(options, myClasses);
-        std::cout << "Assignment added." << std::endl << std::endl;
+        std::cout << "Assignment " << options.assignment << " has been added." << std::endl << std::endl;
     }
 }
