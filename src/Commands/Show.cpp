@@ -6,10 +6,10 @@ void printClassInfo (const gen::classData &data) {
     std::cout << std::setw(16) << "Assignment(s):" << std::endl;
     int i = 0;
     for (i; i < int(data.assignments.size()) - 1; i++) {
-        std::cout << std::setw(5) << "(" << i + 1 << ") " << data.assignments.at(i).getName() << std::endl;
+        std::cout << std::setw(5) << "" << i + 1 << ". " << data.assignments.at(i).getName() << std::endl;
     }
     if (data.assignments.size() >= 1) {
-        std::cout << std::setw(5) << "(" << i + 1 <<") " << data.assignments.at(i).getName() << std::endl;
+        std::cout << std::setw(5) << "" << i + 1 << ". " << data.assignments.at(i).getName() << std::endl;
     } else {
         std::cout << std::setw(4) << "" << "No assignments!" << std::endl;
     }
@@ -24,6 +24,6 @@ void show::runShow(const gen::flagNames &options, const std::map<std::string, ge
     } else if (myClasses.count(options.className)) {
         printClassInfo(myClasses.at(options.className));
     } else {
-        std::cout << "Class '" << options.className << "' was not found." << std::endl << std::endl;
+        std::cout << "Class " << options.className << " was not found." << std::endl << std::endl;
     }
 }

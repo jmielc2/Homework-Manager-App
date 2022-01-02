@@ -5,6 +5,7 @@ void rm::runRemove(gen::flagNames &options, std::map<std::string, gen::classData
         std::cout << "No classes currently saved." << std::endl << std::endl;
         return;
     }
+
     if (options.className == "") {
         gen::getClassName(options.className);
     }
@@ -12,23 +13,33 @@ void rm::runRemove(gen::flagNames &options, std::map<std::string, gen::classData
         std::cout << "Class " << options.className << " was not found." << std::endl << std::endl;
         return;
     }
+
+    if (myClasses.at(options.className).assignments.size() == 0) {
+        std::cout << "Class " << options.className << " has no assignments saved." << std::endl << std::endl;
+        return;
+    }
+
     if (options.assignment == "") {
-        removeClass(options, myClasses);
+        if (!removeClass(options, myClasses)) {
+            gen::getAssignmentName(options.assignment);
+            removeAssignment(options, myClasses);
+        }
     } else {
         removeAssignment(options, myClasses);
     }
 }
 
-void rm::removeClass(const gen::flagNames &options, std::map<std::string, gen::classData> &myClasses) {
+bool rm::removeClass(const gen::flagNames &options, std::map<std::string, gen::classData> &myClasses) {
     std::cout << "Class " << options.className << " and all its data will be deleted. Do you want to proceed? (Yes/No): ";
     if (gen::confirm()) {
         myClasses.erase(options.className);
-        std::cout << "Class " << options.className << " has been deleted." << std::endl;
+        std::cout << "Class " << options.className << " has been deleted." << std::endl << std::endl;
+        return true;
     }
-    std::cout << std::endl;
+    return false;
 }
 
-void rm::removeAssignment(const gen::flagNames &options, std::map<std::string, gen::classData> &myClasses) {
+bool rm::removeAssignment(const gen::flagNames &options, std::map<std::string, gen::classData> &myClasses) {
     int i = 0;
     for (auto &a : myClasses.at(options.className).assignments) {
         if (a.getName() == options.assignment) {
@@ -37,9 +48,10 @@ void rm::removeAssignment(const gen::flagNames &options, std::map<std::string, g
                 myClasses.at(options.className).assignments.erase(myClasses.at(options.className).assignments.begin() + i);
             }
             std::cout << "Assignment " <<  options.assignment << " for " << options.className << " has been removed." << std::endl << std::endl;
-            return;
+            return true;
         }
         i++;
     }
     std::cout << "Assignment " << options.assignment << " was not found for " << options.className << "." << std::endl << std::endl;
+    return false;
 }

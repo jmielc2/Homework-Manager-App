@@ -20,21 +20,40 @@ void gen::from_json(const json &j, gen::classData &d) {
 void gen::getClassName(std::string &className) {
     std::cout << "Please enter the name of the class: ";
     std::getline(std::cin, className);
+    while (stripString(className) == "") {
+        std::cout << std::endl << "Invalid name, please enter an identifiable name: ";
+        std::getline(std::cin, className);
+    }
+    className = stripString(className);
+    std::cout << std::endl;
 }
 
 void gen::getAssignmentName(std::string &assignmentName) {
     std::cout << "Please enter the name of the assignment: ";
     std::getline(std::cin, assignmentName);
+    while (stripString(assignmentName) == "") {
+        std::cout << std::endl << "Invalid name, please enter an identifiable name: ";
+        std::getline(std::cin, assignmentName);
+    }
+    assignmentName = stripString(assignmentName);
+    std::cout << std::endl;
 }
 
-void gen::getProffessorName(std::string &proffessor) {
+void gen::getProffessorName(std::string &professor) {
     std::cout << "Please enter the name of the teacher: ";
-    std::getline(std::cin, proffessor);
+    std::getline(std::cin, professor);
+    while (stripString(professor) == "") {
+        std::cout << std::endl << "Invalid name, please enter an identifiable name: ";
+        std::getline(std::cin, professor);
+    }
+    professor = stripString(professor);
+    std::cout << std::endl;
 }
 
 bool gen::confirm() {
     std::string ans;
     std::getline(std::cin, ans);
+    std::cout << std::endl;
     if (ans.find("Yes") != std::string::npos || ans.find("yes") != std::string::npos
     || ans == "Y" || ans.find("y") != std::string::npos) {
         return true;    
@@ -53,7 +72,8 @@ void gen::getAssignmentType(int &type) {
 
     while (true) {
         std::cout << "Enter one of the options above: ";
-        std::cin >> ans;
+        std::getline(std::cin, ans);
+        std::cout << std::endl;
         if (ans.find("Homework") != std::string::npos || ans.find("homework") != std::string::npos
         || ans.find("1") != std::string::npos) {
             type = amnt::HOMEWORK;
@@ -77,4 +97,30 @@ void gen::getAssignmentType(int &type) {
             std::cout << "Your option did not match." << std::endl << std::endl;
         }
     }
+}
+
+std::string gen::stripString(std::string phrase) {
+    int i = 0, j = 0, k = 0;
+    while (i < phrase.size()) {
+        if (!std::isspace(phrase.at(i))) {
+            break;
+        }
+        i++;
+    }
+    if (i == phrase.size()) {
+        return "";
+    }
+    j = k = i;
+
+    while (k < phrase.size()) {
+        while (k < phrase.size() && !std::isspace(phrase.at(k))) {
+            k++;
+        }
+        j = k;
+        while (k < phrase.size() && std::isspace(phrase.at(k))) {
+            k++;
+        }
+    }
+
+    return phrase.substr(i, j - i);
 }

@@ -28,7 +28,10 @@ std::map<std::string, gen::classData> setupApp() {
         fs::create_directory(gen::dataFolderPath);
     }
     if (!fs::exists(gen::dataFilePath)) {
+        json starter;
+        starter["data"] = json::array();
         std::ofstream dataFile(gen::dataFilePath);
+        dataFile << std::setw(4) << starter << std::endl;
         dataFile.close();
     }
     return fetchClassData(gen::testFilePath); // UPDATE FOR FINAL RELEASE

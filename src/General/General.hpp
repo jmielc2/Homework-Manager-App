@@ -24,11 +24,13 @@ namespace gen {
 
     extern bool confirm();
 
-    extern void getProffessorName(std::string &proffessor);
+    extern void getProffessorName(std::string &professor);
     
     extern void getAssignmentName(std::string &assignmentName);
 
     extern void getAssignmentType(int &type);
+
+    extern std::string stripString(std::string phrase);
 };
 
 #endif
