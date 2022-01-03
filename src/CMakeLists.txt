@@ -13,3 +13,5 @@ add_executable(${PROJECT_NAME} main.cpp App.cpp
                             Commands/Add.cpp
                             Commands/Remove.cpp
                             Components/Assignment.cpp)
+
+install(TARGETS homework DESTINATION bin)

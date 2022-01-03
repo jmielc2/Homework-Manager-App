@@ -6,12 +6,14 @@
 #include "Commands/Add.hpp"
 #include "Commands/Remove.hpp"
 
-extern std::map<std::string, gen::classData> setupApp();
+namespace app {
+    extern std::map<std::string, gen::classData> setupApp();
 
-extern bool parseCommand(int argc, char** argv, gen::flagNames &options);
+    extern bool parseCommand(int argc, char** argv, gen::flagNames &options);
 
-extern void saveClassData(std::map<std::string, gen::classData> &myClasses, const fs::path &dataFilePath);
+    extern void saveClassData(std::map<std::string, gen::classData> &myClasses, const fs::path &dataFilePath);
 
-extern void runApp (gen::flagNames &options, std::map<std::string, gen::classData> &myClasses);
+    extern void runApp (gen::flagNames &options, std::map<std::string, gen::classData> &myClasses);
+};
 
 #endif

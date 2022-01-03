@@ -1,11 +1,6 @@
 #include "Remove.hpp"
 
 void rm::runRemove(gen::flagNames &options, std::map<std::string, gen::classData> &myClasses) {
-    if (myClasses.size() == 0) {
-        std::cout << "No classes currently saved." << std::endl << std::endl;
-        return;
-    }
-
     if (options.className == "") {
         gen::getClassName(options.className);
     }
@@ -14,7 +9,7 @@ void rm::runRemove(gen::flagNames &options, std::map<std::string, gen::classData
         return;
     }
 
-    if (myClasses.at(options.className).assignments.size() == 0) {
+    if (!myClasses.at(options.className).assignments.size()) {
         std::cout << "Class " << options.className << " has no assignments saved." << std::endl << std::endl;
         return;
     }

@@ -85,6 +85,7 @@ void gen::getAssignmentType(int &type) {
         } else if (ans.find("Exam") != std::string::npos || ans.find("exam") != std::string::npos
         || ans.find("3") != std::string::npos) {
             type = amnt::EXAM;
+            break;
         } else if (ans.find("Project") != std::string::npos || ans.find("project") != std::string::npos
         || ans.find("4") != std::string::npos) {
             type = amnt::PROJECT;

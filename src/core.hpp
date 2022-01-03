@@ -24,9 +24,9 @@ using json = nlohmann::json;
 #include "General/Commands.hpp"
 
 namespace gen {
-    const fs::path dataFolderPath("./data");
-    const fs::path dataFilePath("./data/class-data.json");
-    const fs::path testFilePath("./data/test.json");
+    const fs::path dataFolderPath("./homework/data");
+    const fs::path programFolderPath("./homework");
+    const fs::path dataFilePath("./homework/data/class-data.json");
     enum {ADD, REMOVE, SHOW, VERSION, HELP, NONE};
 };
 
