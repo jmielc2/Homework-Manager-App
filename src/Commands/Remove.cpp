@@ -9,17 +9,20 @@ void rm::runRemove(gen::flagNames &options, std::map<std::string, gen::classData
         return;
     }
 
-    if (!myClasses.at(options.className).assignments.size()) {
-        std::cout << "Class " << options.className << " has no assignments saved." << std::endl << std::endl;
-        return;
-    }
-
     if (options.assignment == "") {
         if (!removeClass(options, myClasses)) {
+            if (!myClasses.at(options.className).assignments.size()) {
+                std::cout << "Class " << options.className << " has no assignments saved." << std::endl << std::endl;
+                return;
+            }
             gen::getAssignmentName(options.assignment);
             removeAssignment(options, myClasses);
         }
     } else {
+        if (!myClasses.at(options.className).assignments.size()) {
+            std::cout << "Class " << options.className << " has no assignments saved." << std::endl << std::endl;
+            return;
+        }
         removeAssignment(options, myClasses);
     }
 }

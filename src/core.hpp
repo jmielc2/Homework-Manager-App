@@ -1,7 +1,7 @@
 #ifndef CORE_HPP
 #define CORE_HPP 1
 
-#define VERSION_NO 1.00
+#define VERSION_NO 1.01
 
 // Standard Libraries
 #include <iostream>

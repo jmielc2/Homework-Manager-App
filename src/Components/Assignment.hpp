@@ -8,7 +8,8 @@ using json = nlohmann::json;
 
 namespace amnt {
     enum {HOMEWORK = 1, ESSAY, EXAM, PROJECT, OTHER};
-
+    const unsigned int NUM_ASSIGNMENT_TYPES = 5;
+    
     class Assignment {
     private:
         std::string assignmentName;

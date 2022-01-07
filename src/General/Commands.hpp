@@ -23,6 +23,31 @@ namespace cmd {
     printGeneralUsage():
     */
     extern void printGeneralUsage();
+
+    /*
+    printAddOptions():
+    */
+    extern void printAddOptions();
+
+    /*
+    printRemoveOptions():
+    */
+    extern void printRemoveOptions();
+
+    /*
+    printVersionOptsion():
+    */
+    extern void printVersionOptions();
+
+    /*
+    printHelpOptions():
+    */
+    extern void printHelpOptions();
+
+    /*
+    printShowOptions():
+    */
+    extern void printShowOptions();
 };
 
 #endif

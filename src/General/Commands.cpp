@@ -12,26 +12,17 @@ void cmd::printCommands() {
 
 void cmd::printCommandOptions() {
     std::cout << "Command Options:" << std::endl;
-    std::cout << "   ADD:" << std::endl;
-    std::cout << "\tNONE" << std::setw(36) << "   " << "No options. Will prompt user input." << std::endl;
-    std::cout << "\t-c <class name>" << std::setw(25) << "   " << "Specifies addition of a new class and its name." << std::endl;
-    std::cout << "\t-c <class name> -a <assignment name>" << std::setw(4) << "   " << "Specifies addition of an assignment, the class it is in, and its name." << std::endl;
-    std::cout << "   REMOVE:" << std::endl;
-    std::cout << "\tNONE" << std::setw(36) << "   " << "No options. Will prompt user input." << std::endl;
-    std::cout << "\t-c <class name>" << std::setw(25) << "   " << "Specifies remove of a class and its name." << std::endl;
-    std::cout << "\t-c <class name> -a <assignment name>" << std::setw(4) << "   " << "Specifies removal of an assignment, the class it is in, and its name." << std::endl;
-    std::cout << "   SHOW:" << std::endl;
-    std::cout << "\tNONE" << std::setw(36) << "   " << "No options. Displays all classes and their assignments." << std::endl;
-    std::cout << "\t-c <class name>" << std::setw(25) << "   " << "Displays all assignments for the specified class." << std::endl;
-    std::cout << "   VERSION:" << std::endl;
-    std::cout << "\tNONE" << std::setw(36) << "   " << "No options. Displays the current app version." << std::endl;
-    std::cout << "   HELP:" << std::endl;
-    std::cout << "\tNONE" << std::setw(36) << "   " << "No options. Displays the apps commands and options formatting." << std::endl << std::endl;
+    printAddOptions();
+    printRemoveOptions();
+    printShowOptions();
+    printVersionOptions();
+    printHelpOptions();
+    std::cout << std::endl;
 }
 
 
 void cmd::printUsage() {
-    std::cout << "Usage" << std::endl << std::endl;
+    std::cout << "Usage:" << std::endl << std::endl;
     std::cout << "\thomework <command> [options]" << std::endl << std::endl;
 }
 
@@ -39,4 +30,39 @@ void cmd::printUsage() {
 void cmd::printGeneralUsage() {
     cmd::printUsage();
     cmd::printCommands();
+}
+
+
+void cmd::printAddOptions() {
+    std::cout << "   add" << std::endl;
+    std::cout << "\tNONE" << std::setw(36) << "   " << "No options. Will prompt user input." << std::endl;
+    std::cout << "\t-c <class name>" << std::setw(25) << "   " << "Specifies addition of a new class and its name." << std::endl;
+    std::cout << "\t-c <class name> -a <assignment name>" << std::setw(4) << "   " << "Specifies addition of an assignment, the class it is in, and its name." << std::endl;
+}
+
+
+void cmd::printRemoveOptions() {
+    std::cout << "   remove" << std::endl;
+    std::cout << "\tNONE" << std::setw(36) << "   " << "No options. Will prompt user input." << std::endl;
+    std::cout << "\t-c <class name>" << std::setw(25) << "   " << "Specifies remove of a class and its name." << std::endl;
+    std::cout << "\t-c <class name> -a <assignment name>" << std::setw(4) << "   " << "Specifies removal of an assignment, the class it is in, and its name." << std::endl;
+}
+
+
+void cmd::printShowOptions() {
+    std::cout << "   show" << std::endl;
+    std::cout << "\tNONE" << std::setw(36) << "   " << "No options. Displays all classes and their assignments." << std::endl;
+    std::cout << "\t-c <class name>" << std::setw(25) << "   " << "Displays all assignments for the specified class." << std::endl;
+}
+
+
+void cmd::printVersionOptions() {
+    std::cout << "   version" << std::endl;
+    std::cout << "\tNONE" << std::setw(36) << "   " << "No options. Displays the current app version." << std::endl;
+}
+
+
+void cmd::printHelpOptions() {
+    std::cout << "   help" << std::endl;
+    std::cout << "\tNONE" << std::setw(36) << "   " << "No options. Displays the apps commands and options formatting." << std::endl << std::endl;
 }
