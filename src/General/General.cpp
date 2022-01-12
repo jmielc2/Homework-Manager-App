@@ -125,3 +125,24 @@ std::string gen::stripString(std::string phrase) {
 
     return phrase.substr(i, j - i);
 }
+
+
+bool gen::searchClasses(const std::map<std::string, gen::classData> &myClasses, const std::string key, std::string &className) {
+    if (myClasses.count(key)) {
+        className = key;
+        return true;
+    }
+    bool found = false;
+    for (const auto &a : myClasses) {
+        if (a.first.find(key) != std::string::npos) {
+            if (!found) {
+                found = true;
+                className = a.first;
+            } else {
+                className = "";
+                return false;
+            }
+        }
+    }
+    return true;
+}

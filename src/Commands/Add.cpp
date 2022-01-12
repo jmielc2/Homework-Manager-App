@@ -34,13 +34,14 @@ void add::runAdd(gen::flagNames &options, std::map<std::string, gen::classData> 
     if (options.className == "") {
         gen::getClassName(options.className);
     }
-
-    if (!myClasses.count(options.className)) {
+    std::string className;
+    if (!gen::searchClasses(myClasses, options.className, className)) {
         std::cout << "Class " << options.className << " was not found." << std::endl;
         addClass(options, myClasses);
         return;
     }
-
+    options.className = className;
+    className = "";
     if (options.assignment == "") {
         gen::getAssignmentName(options.assignment);
     }

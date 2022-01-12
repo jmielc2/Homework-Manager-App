@@ -41,12 +41,13 @@ void printClassInfo (const gen::classData &data) {
 }
 
 void show::runShow(const gen::flagNames &options, const std::map<std::string, gen::classData> &myClasses) {
+    std::string className;
     if (options.className == "") {
         for (auto it = myClasses.begin(); it != myClasses.end(); it++) {
             printClassInfo(it->second);
         }
-    } else if (myClasses.count(options.className)) {
-        printClassInfo(myClasses.at(options.className));
+    } else if (gen::searchClasses(myClasses, options.className, className)) {
+        printClassInfo(myClasses.at(className));
     } else {
         std::cout << "Class " << options.className << " was not found." << std::endl << std::endl;
     }

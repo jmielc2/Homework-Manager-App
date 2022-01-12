@@ -30,6 +30,8 @@ namespace gen {
 
     extern void getAssignmentType(int &type);
 
+    extern bool searchClasses(const std::map<std::string, classData> &myClasses, const std::string key, std::string &className);
+
     extern std::string stripString(std::string phrase);
 };
 
