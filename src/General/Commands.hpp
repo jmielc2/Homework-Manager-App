@@ -48,6 +48,11 @@ namespace cmd {
     printShowOptions():
     */
     extern void printShowOptions();
+
+    /*
+    printEditOptions():
+    */
+    extern void printEditOptions();
 };
 
 #endif

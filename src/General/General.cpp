@@ -146,3 +146,9 @@ bool gen::searchClasses(const std::map<std::string, gen::classData> &myClasses, 
     }
     return true;
 }
+
+
+bool gen::searchAssignments(const std::vector<amnt::Assignment> &assignments, const std::string key, std::string &assignmentName) {
+    assignmentName = key;
+    return true;
+}

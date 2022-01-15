@@ -5,6 +5,7 @@ void cmd::printCommands() {
     std::cout << "\tadd" << std::setw(7) << " " << "Add a class or assignment." << std::endl;
     std::cout << "\tremove" << std::setw(4) << " " << "Remove a class or assignment." << std::endl;
     std::cout << "\tshow" << std::setw(6) << " " << "Display class or assignment." << std::endl;
+    std::cout << "\tedit" << std::setw(6) << " " << "Edits a specified class or assignment." << std::endl;
     std::cout << "\tversion" << std::setw(3) << " " << "Display current app version." << std::endl;
     std::cout << "\thelp" << std::setw(6) << " " << "Display commands and options." << std::endl << std::endl;
 }
@@ -15,6 +16,7 @@ void cmd::printCommandOptions() {
     printAddOptions();
     printRemoveOptions();
     printShowOptions();
+    printEditOptions();
     printVersionOptions();
     printHelpOptions();
     std::cout << std::endl;
@@ -65,4 +67,11 @@ void cmd::printVersionOptions() {
 void cmd::printHelpOptions() {
     std::cout << "   help" << std::endl;
     std::cout << "\tNONE" << std::setw(36) << "   " << "No options. Displays the apps commands and options formatting." << std::endl << std::endl;
+}
+
+void cmd::printEditOptions() {
+    std::cout << "   edit" << std::endl;
+    std::cout << "\tNONE" << std::setw(36) << "" << "No options. Will prompt user input." << std::endl;
+    std::cout << "\t-c <class name>" << std::setw(25) << "" << "Triggers the editing protocol for the specified class information." << std::endl;
+    std::cout << "\t-c <class name> -a <assignment name>" << std::setw(4) << "" << "Triggers the editing protocol for the specified assignment for the given class." << std::endl;
 }
